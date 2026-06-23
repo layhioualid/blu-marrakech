@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import { experiences } from "@/lib/constants";
 import MotionReveal from "./MotionReveal";
 
@@ -17,8 +18,10 @@ export default function Experience() {
         <div className="grid gap-px bg-white/10 md:grid-cols-2 xl:grid-cols-4">
           {experiences.map((item, index) => {
             const Icon = item.icon;
-            return <motion.article key={item.title} className="luxury-card group relative min-h-[370px] overflow-hidden bg-[#06080d]/90 p-7 backdrop-blur-xl sm:p-9" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .15 }} transition={{ delay: index * .09, duration: .65 }} whileHover={{ y: -8 }}>
-              <div className="absolute inset-0 translate-y-full bg-gradient-to-t from-electric/20 to-transparent transition-transform duration-700 group-hover:translate-y-0" />
+            return <motion.article key={item.title} className="luxury-card group relative min-h-[430px] overflow-hidden bg-[#06080d]/90 p-7 backdrop-blur-xl sm:p-9" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .15 }} transition={{ delay: index * .09, duration: .65 }} whileHover={{ y: -8 }}>
+              <Image src={item.image} alt={`${item.title} au BLU Marrakech`} fill className="object-cover opacity-55 transition duration-1000 group-hover:scale-105 group-hover:opacity-75" sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 25vw" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#030407] via-[#030407]/65 to-[#030407]/10" />
+              <div className="absolute inset-0 translate-y-full bg-gradient-to-t from-electric/25 to-transparent transition-transform duration-700 group-hover:translate-y-0" />
               <div className="relative flex h-full flex-col">
                 <div className="flex items-start justify-between"><span className="grid h-12 w-12 place-items-center border border-gold/30 text-gold transition duration-500 group-hover:border-electric group-hover:bg-electric group-hover:text-white group-hover:shadow-glow"><Icon size={20} strokeWidth={1.4} /></span><span className="font-display text-3xl text-white/10">{item.number}</span></div>
                 <div className="mt-auto"><h3 className="font-display text-3xl text-white">{item.title}</h3><div className="my-5 h-px w-10 bg-gold transition-all duration-500 group-hover:w-20 group-hover:bg-electric" /><p className="text-sm font-light leading-7 text-white/50">{item.description}</p><ArrowUpRight className="mt-6 text-white/25 transition group-hover:text-gold" size={18} /></div>

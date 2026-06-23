@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { CalendarDays, Star } from "lucide-react";
+import Image from "next/image";
 import ReserveButton from "./ReserveButton";
 
 function nextFriday() {
@@ -13,6 +14,7 @@ export default function StarGuest() {
   const [time, setTime] = useState({ d: "00", h: "00", m: "00", s: "00" });
   useEffect(() => { const tick = () => { const distance = Math.max(0, nextFriday().getTime() - Date.now()); setTime({ d: String(Math.floor(distance / 86400000)).padStart(2, "0"), h: String(Math.floor(distance / 3600000) % 24).padStart(2, "0"), m: String(Math.floor(distance / 60000) % 60).padStart(2, "0"), s: String(Math.floor(distance / 1000) % 60).padStart(2, "0") }); }; tick(); const id = setInterval(tick, 1000); return () => clearInterval(id); }, []);
   return <section className="relative overflow-hidden border-y border-gold/20 py-24 sm:py-32">
+    <Image src="/images/card-live-singer.png" alt="Star Guest au BLU Marrakech" fill className="object-cover object-[70%_30%] opacity-20" sizes="100vw"/>
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(23,107,255,.28),transparent_40%),linear-gradient(120deg,#030407_15%,#09142c_100%)]" />
     <div className="absolute -right-16 top-1/2 font-display text-[18rem] leading-none text-white/[.025] -translate-y-1/2">★</div>
     <div className="site-container relative grid gap-12 lg:grid-cols-[1.1fr_.9fr] lg:items-end">

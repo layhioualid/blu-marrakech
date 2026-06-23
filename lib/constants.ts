@@ -17,28 +17,28 @@ export const navLinks = [
 ];
 
 export const experiences = [
-  { icon: Mic2, number: "01", title: "Live Music", description: "Six voix live et une énergie qui habite chaque instant." },
-  { icon: Sparkles, number: "02", title: "Cabaret Show", description: "Une mise en scène élégante, magnétique et contemporaine." },
-  { icon: Crown, number: "03", title: "VIP Experience", description: "Tables privilégiées et service orchestré dans les moindres détails." },
-  { icon: Star, number: "04", title: "Star Guest", description: "Chaque vendredi, une personnalité invitée signe la nuit." },
-  { icon: Gem, number: "05", title: "Premium Nightlife", description: "Une adresse confidentielle pensée pour les nuits d'exception." },
-  { icon: MoonStar, number: "06", title: "Marrakech Vibes", description: "L'âme de la ville ocre réinterprétée en bleu et or." },
+  { icon: Mic2, number: "01", title: "Live Music", image: "/images/card-live-singer.png", description: "Six voix live et une énergie qui habite chaque instant." },
+  { icon: Sparkles, number: "02", title: "Cabaret Show", image: "/images/card-cabaret.png", description: "Une mise en scène élégante, magnétique et contemporaine." },
+  { icon: Crown, number: "03", title: "VIP Experience", image: "/images/card-vip.png", description: "Tables privilégiées et service orchestré dans les moindres détails." },
+  { icon: Star, number: "04", title: "Star Guest", image: "/images/card-live-singer.png", description: "Chaque vendredi, une personnalité invitée signe la nuit." },
+  { icon: Gem, number: "05", title: "Premium Nightlife", image: "/images/card-dj.png", description: "Une adresse confidentielle pensée pour les nuits d'exception." },
+  { icon: MoonStar, number: "06", title: "Marrakech Vibes", image: "/images/card-cabaret.png", description: "L'âme de la ville ocre réinterprétée en bleu et or." },
 ];
 
 export const weeklyProgram = [
-  { day: "Lundi", short: "LU", title: "Late Night BLU", time: "23:30–05:00" },
-  { day: "Mardi", short: "MA", title: "Live Music Night", time: "23:00–05:00" },
-  { day: "Mercredi", short: "ME", title: "Cabaret Mood", time: "23:00–05:00" },
-  { day: "Jeudi", short: "JE", title: "VIP Night", time: "23:00–05:00" },
-  { day: "Vendredi", short: "VE", title: "Star Guest", time: "23:00–05:00", featured: true },
-  { day: "Samedi", short: "SA", title: "Signature Show", time: "23:00–05:00" },
-  { day: "Dimanche", short: "DI", title: "Marrakech Night", time: "23:00–05:00" },
+  { day: "Lundi", short: "LU", title: "Late Night BLU", time: "23:30–05:00", image: "/images/card-dj.png" },
+  { day: "Mardi", short: "MA", title: "Live Music Night", time: "23:00–05:00", image: "/images/card-live-singer.png" },
+  { day: "Mercredi", short: "ME", title: "Cabaret Mood", time: "23:00–05:00", image: "/images/card-cabaret.png" },
+  { day: "Jeudi", short: "JE", title: "VIP Night", time: "23:00–05:00", image: "/images/card-vip.png" },
+  { day: "Vendredi", short: "VE", title: "Star Guest", time: "23:00–05:00", image: "/images/card-live-singer.png", featured: true },
+  { day: "Samedi", short: "SA", title: "Signature Show", time: "23:00–05:00", image: "/images/card-cabaret.png" },
+  { day: "Dimanche", short: "DI", title: "Marrakech Night", time: "23:00–05:00", image: "/images/card-dj.png" },
 ];
 
 export const gallery = [
-  { category: "Shows", position: "70% center", size: "lg:col-span-2 lg:row-span-2" },
-  { category: "Live Music", position: "82% 42%", size: "" },
-  { category: "VIP", position: "30% 75%", size: "" },
-  { category: "Star Guests", position: "62% 46%", size: "lg:col-span-2" },
-  { category: "Ambiance", position: "42% 80%", size: "" },
+  { category: "Shows", image: "/images/card-cabaret.png", position: "center 34%", size: "lg:col-span-2 lg:row-span-2" },
+  { category: "Live Music", image: "/images/card-live-singer.png", position: "center 25%", size: "" },
+  { category: "VIP", image: "/images/card-vip.png", position: "center 60%", size: "" },
+  { category: "Star Guests", image: "/images/card-live-singer.png", position: "center 38%", size: "lg:col-span-2" },
+  { category: "Ambiance", image: "/images/card-dj.png", position: "center 35%", size: "" },
 ];
