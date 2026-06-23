@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { navLinks } from "@/lib/constants";
 import LogoMark from "./LogoMark";
+import ReserveButton from "./ReserveButton";
 
 function Brand() {
   return (
@@ -41,7 +42,7 @@ export default function Navbar() {
         <div className="hidden items-center gap-7 lg:flex">
           {navLinks.map((link) => <a key={link.href} href={link.href} className="text-[10px] font-medium uppercase tracking-[0.16em] text-white/65 transition hover:text-white">{link.label}</a>)}
         </div>
-        <a href="#reservation" className="btn-primary hidden !min-h-10 !px-5 lg:inline-flex">Réserver</a>
+        <ReserveButton className="btn-primary hidden !min-h-10 !px-5 lg:inline-flex">Réserver</ReserveButton>
         <button className="relative z-50 grid h-11 w-11 place-items-center border border-white/15 text-white lg:hidden" onClick={() => setOpen(!open)} aria-label={open ? "Fermer le menu" : "Ouvrir le menu"} aria-expanded={open}>
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>

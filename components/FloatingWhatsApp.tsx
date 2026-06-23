@@ -1,7 +1,4 @@
-import { MessageCircle } from "lucide-react";
+"use client";
+import { CalendarCheck, MessageCircle } from "lucide-react";
 import { WHATSAPP_NUMBER } from "@/lib/constants";
-
-export default function FloatingWhatsApp() {
-  const text = encodeURIComponent("Bonjour BLU Marrakech, je souhaite faire une réservation.");
-  return <a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`} target="_blank" rel="noreferrer" aria-label="Réserver sur WhatsApp" className="whatsapp-pulse fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full border border-blue-300/50 bg-electric text-white transition hover:scale-110 sm:bottom-7 sm:right-7"><MessageCircle size={23} fill="currentColor" strokeWidth={1.3} /></a>;
-}
+export default function FloatingWhatsApp(){return <div className="fixed bottom-4 right-4 z-40 flex items-center gap-2 sm:bottom-7 sm:right-7"><button type="button" onClick={()=>window.dispatchEvent(new Event("open-blu-reservation"))} className="hidden min-h-12 items-center gap-2 border border-gold bg-ink/90 px-5 text-[9px] font-bold uppercase tracking-[.18em] text-gold shadow-gold backdrop-blur-xl transition hover:bg-gold hover:text-ink sm:inline-flex"><CalendarCheck size={15}/> Réserver</button><a href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Bonjour BLU Marrakech, je souhaite faire une réservation.")}`} target="_blank" rel="noreferrer" aria-label="Réserver sur WhatsApp" className="whatsapp-pulse grid h-14 w-14 place-items-center rounded-full border border-blue-300/50 bg-electric text-white transition hover:scale-110"><MessageCircle size={22} fill="currentColor" strokeWidth={1.3}/></a></div>}
