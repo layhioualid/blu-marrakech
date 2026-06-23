@@ -11,11 +11,11 @@ export default function Hero() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const imageY = useTransform(scrollYProgress, [0, 1], [0, 130]);
   const contentY = useTransform(scrollYProgress, [0, 1], [0, 70]);
-  const videoUrl = process.env.NEXT_PUBLIC_HERO_VIDEO_URL;
+  const videoUrl = process.env.NEXT_PUBLIC_HERO_VIDEO_URL || "/videos/dj-party.mp4";
   return <section ref={ref} id="accueil" className="noise relative flex min-h-[760px] items-center overflow-hidden sm:min-h-screen">
     <motion.div style={{ y: imageY }} className="absolute -inset-10">
       <Image src="/images/blu-hero-cinematic.png" alt="Scène live premium au BLU Marrakech" fill priority sizes="100vw" className="object-cover object-[67%_center]" />
-      {videoUrl && <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline poster="/images/blu-hero-cinematic.png"><source src={videoUrl} /></video>}
+      {videoUrl && <video className="absolute inset-0 hidden h-full w-full object-cover md:block" autoPlay muted loop playsInline preload="metadata" poster="/images/blu-hero-cinematic.png"><source src={videoUrl} type="video/mp4" /></video>}
     </motion.div>
     <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,3,7,.98)_0%,rgba(2,3,7,.88)_34%,rgba(2,3,7,.25)_78%,rgba(2,3,7,.48)_100%)]" />
     <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/50" />
