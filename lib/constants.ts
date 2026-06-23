@@ -5,8 +5,8 @@ export const INSTAGRAM_URL = "https://www.instagram.com/blu.marrakech_/";
 export const PHONE_PRIMARY = "0633333022";
 export const PHONE_SECONDARY = "0707074972";
 export const WHATSAPP_NUMBER = "212633333022";
-export const MAPS_URL = "https://maps.app.goo.gl/WDt7h3vKzw35JHjU7?g_st=ic";
-export const MAPS_EMBED_URL = "https://www.google.com/maps?q=31.5967414,-7.9884732&z=17&output=embed";
+export const MAPS_URL = "https://www.google.com/maps?q=BLU+MARRAKECH,+Adam+park+hotel,+Marrakesh+40000&ftid=0xdafefa866d5a395:0x15b3e8e41ce7e02e&entry=gps&shh=CAE&lucs=,94297699,94284475,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI2LjA2LjIuODY0NDM1MTkzMBgAINeCAypILDk0Mjk3Njk5LDk0Mjg0NDc1LDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJNQQ%3D%3D&skid=b48b2ee6-4ee8-497c-8002-4b8951c5d598&g_st=ic";
+export const MAPS_EMBED_URL = "https://www.google.com/maps?q=BLU%20MARRAKECH%2C%20Adam%20Park%20Hotel%2C%20Marrakesh%2040000&z=17&output=embed";
 
 export const navLinks = [
   { label: "Expérience", href: "#experience" },
