@@ -28,8 +28,8 @@ export default function BookingForm({ compact = false, onSuccess }: { compact?: 
     }, 650);
   };
   const field = "field";
-  return <form onSubmit={submit} noValidate className={compact ? "" : "glass p-6 sm:p-10"}>
-    <div className="grid gap-5 sm:grid-cols-2">
+  return <form onSubmit={submit} noValidate className={`min-w-0 max-w-full ${compact ? "" : "glass overflow-hidden p-5 sm:p-10"}`}>
+    <div className="grid min-w-0 grid-cols-[minmax(0,1fr)] gap-5 sm:grid-cols-2">
       <label className="form-label">Nom complet *<input className={field} value={form.name} onChange={(e) => update("name", e.target.value)} autoComplete="name" placeholder="Votre nom" /></label>
       <label className="form-label">Téléphone *<input className={field} value={form.phone} onChange={(e) => update("phone", e.target.value)} inputMode="tel" autoComplete="tel" placeholder="06 00 00 00 00" /></label>
       <label className="form-label">Date *<input className={field} type="date" min={minDate} value={form.date} onChange={(e) => update("date", e.target.value)} /></label>
