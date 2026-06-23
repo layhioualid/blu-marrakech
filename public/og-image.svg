@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g" cx="75%" cy="35%" r="65%"><stop offset="0" stop-color="#176BFF" stop-opacity=".42"/><stop offset="1" stop-color="#030407" stop-opacity="0"/></radialGradient>
+    <linearGradient id="l" x1="0" x2="1"><stop stop-color="#D6B36A"/><stop offset="1" stop-color="#806533"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#030407"/><rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="54" y="54" width="1092" height="522" fill="none" stroke="#D6B36A" stroke-opacity=".35"/>
+  <text x="600" y="320" fill="#F6F3ED" text-anchor="middle" font-family="Georgia, serif" font-size="210" letter-spacing="-12">BLU</text>
+  <text x="600" y="398" fill="url(#l)" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="58">Marrakech</text>
+  <text x="600" y="480" fill="#F6F3ED" fill-opacity=".55" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" letter-spacing="9">LIVE MUSIC  •  CABARET  •  SHOWS</text>
+</svg>
