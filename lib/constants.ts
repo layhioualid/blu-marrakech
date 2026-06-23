@@ -5,6 +5,8 @@ export const INSTAGRAM_URL = "https://www.instagram.com/blu.marrakech_/";
 export const PHONE_PRIMARY = "0633333022";
 export const PHONE_SECONDARY = "0707074972";
 export const WHATSAPP_NUMBER = "212633333022";
+export const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=BLU+Marrakech";
+export const MAPS_EMBED_URL = "https://www.google.com/maps?q=BLU%20Marrakech%2C%20Marrakech%2C%20Morocco&z=16&output=embed";
 
 export const navLinks = [
   { label: "Expérience", href: "#experience" },
