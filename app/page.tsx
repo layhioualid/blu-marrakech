@@ -15,4 +15,5 @@ import Reservation from "@/components/Reservation";
 import ReservationModal from "@/components/ReservationModal";
 import StarGuest from "@/components/StarGuest";
 import Testimonials from "@/components/Testimonials";
-export default function Home(){return <><LuxuryLoader/><MouseGlow/><PageExperience><Navbar/><Hero/><Experience/><StarGuest/><ProgramHours/><Gallery/><Artists/><InstagramFeed/><Testimonials/><Reservation/><Contact/><Footer/><FloatingWhatsApp/><ReservationModal/></PageExperience></>}
+import SmoothScroll from "@/components/SmoothScroll";
+export default function Home(){return <><SmoothScroll/><LuxuryLoader/><MouseGlow/><PageExperience><Navbar/><Hero/><Experience/><StarGuest/><ProgramHours/><Gallery/><Artists/><InstagramFeed/><Testimonials/><Reservation/><Contact/><Footer/><FloatingWhatsApp/><ReservationModal/></PageExperience></>}
